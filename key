@@ -34,7 +34,7 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
- local Tab = Window:CreateTab("HUB FOR MM2222 - mm2", 4483362458) -- Title, Image
+ local Tab = Window:CreateTab("script for bss", 4483362458) -- Title, Image
 
  local Section = Tab:CreateSection("tap to load script")
  Section:Set("Section Example")
