@@ -5,7 +5,7 @@ end
 if setfpscap then
     setfpscap(1000000)
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Fent BloxFruits",
+        Title = "Fen Hub",
         Text = "FPS Unlocked!",
         Duration = 5,
         Button1 = "Okay"
@@ -13,7 +13,7 @@ if setfpscap then
     warn("FPS Unlocked!")
 else
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Fent",
+        Title = "Fent Hub",
         Text = "Your exploit does not support setfpscap.",
         Duration = 5,
         Button1 = "Okay"
@@ -23,9 +23,9 @@ end
 
 local WindUI = (loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua")))();
 local Window = WindUI:CreateWindow({
-    Title = "Fent",
+    Title = "Fent Hub",
     Icon = "rbxassetid://84228153855933",
-    Author = "Fent | Blox Fruit",
+    Author = "Fent Hub | Blox Fruit",
     Folder = "Vylera Hub_BF",
     Size = UDim2.fromOffset(550, 300),
     Transparent = true,
@@ -40,7 +40,7 @@ local Window = WindUI:CreateWindow({
     },
 });
 Window:EditOpenButton({
-    Title = "Fent - Open",
+    Title = "Fent Hub - Open",
     Icon = "monitor",
     CornerRadius = UDim.new(0, 6),
     StrokeThickness = 2,
@@ -2460,6 +2460,23 @@ DiscordServerParagraph = Tabs.InfoTab:Paragraph({
             WindUI:Notify({
                 Title = "Notication",
                 Content = "Discord Link Copied",
+                Icon = "bell",
+                Duration = 3
+            });
+        end
+    }}
+});
+DiscordServerParagraph1 = Tabs.InfoTab:Paragraph({
+    Title = "Fent Hub",
+    Desc = "https://discord.gg/rCNNbr3wKz",
+    TextXAlignment = "Left",
+    Buttons = {{
+        Title = "Copy Server",
+        Callback = function()
+            setclipboard("not right now");
+            WindUI:Notify({
+                Title = "Notication",
+                Content = "Social Link Copied",
                 Icon = "bell",
                 Duration = 3
             });
@@ -10627,7 +10644,7 @@ local Data = {
             ["inline"] = false
         }, {
             ["name"] = "Thank You Everyone",
-            ["value"] = "Used Script By Fent",
+            ["value"] = "Used Script By Fent Hub",
             ["inline"] = false
         }}
     }}
