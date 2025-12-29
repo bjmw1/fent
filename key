@@ -40,6 +40,6 @@ local Tab = Window:CreateTab("Fent Hub OMG", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "LOAD SCRIPT",
    Callback = function()
-    loadstring(game:HttpGet("
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bjmw1/fent/refs/heads/main/1705ff2d0356f1ad.lua")()
    end,
 })
